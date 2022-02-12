@@ -33,7 +33,7 @@ read_csv(here("data/NLSY97data.csv")) %>%
   )) %>%
   
   # finally, select the variables that will be used in the analysis
-  select(race, gender, total_arrests) %>%
+  select(race, gender, total_months_incarcerated) %>%
   
   # write to a csv
   write_csv(here("data/NLSY97_clean.csv"))
